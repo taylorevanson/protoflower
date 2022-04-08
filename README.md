@@ -1,7 +1,4 @@
 # protoflower
-useful String, Number, Object, and Array prototypes
-in progress
-here's what I have so far for usage:
 ```javascript
 import { makeApi } from 'protoflower'
 
@@ -10,6 +7,7 @@ makeApi('swapi', {
 })
 makeApi('core', {
     host: 'domain.com',
+    endpoint: 'apiv2'
 })
 
 // GET requests
@@ -29,7 +27,7 @@ requests made in the above code:
 ```
 GET http://swapi.dev/api/people/1
 GET http://swapi.dev/api/people/1
-POST http://domain.com/api/entity/add
+POST http://domain.com/apiv2/entity/add
 ```
 defaults object:
 ```javascript
