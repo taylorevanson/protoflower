@@ -24,8 +24,10 @@ function generateApi(name, options) {
 				if(typeof data !== 'undefined') endpoint = endpoint + '/' + data
 				break;
 		}
+		
+		//console.log('options: ', options)
 
-		return await fetch(`${options.protocol}://${options.host}/${options.endpoint}/${endpoint}`, options).then(response => response.json())
+		return await fetch(`${options.protocol}://${options.host}:${options.port}/${options.endpoint}/${endpoint}`, options)
 	}
 }
 
@@ -45,4 +47,3 @@ String.prototype.api = api
 export function makeApi(name, options) {
 	global.apis[name] = generateApi(name, options)
 }
-

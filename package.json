@@ -1,6 +1,6 @@
 {
   "name": "protoflower",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "useful prototypes",
   "main": "index.js",
   "type": "module",
@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/taylorevanson/protoflower#readme",
   "dependencies": {
-    "isomorphic-fetch": "^3.0.0"
+    "isomorphic-fetch": "^3.0.0",
+    "ws": "^8.5.0"
   }
 }
